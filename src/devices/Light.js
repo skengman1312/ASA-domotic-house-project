@@ -12,14 +12,14 @@ class Light extends Observable {
     switchOnLight (l) {
         if (this.status == "on") return
         this.status = 'on'
-        this.house.utilities.electricity.consumption += 1;
+        this.house.utilities.electricity.consumption += 10;
         // Include some messages logged on the console!
         console.log(this.name + ' light turned on')
     }
     switchOffLight (l) {
         if (this.status == "off") return
         this.status = 'off'
-        this.house.utilities.electricity.consumption -= 1;
+        this.house.utilities.electricity.consumption -= 10;
         // Include some messages logged on the console!
         console.log(this.name + ' light turned off')
     }

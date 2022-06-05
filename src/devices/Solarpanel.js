@@ -17,13 +17,13 @@ class SolarPanel extends Observable{
 
     switchon(){
         this.status = "on"
-        this.house.utilities.electricity.consumption -= 1
+        this.house.utilities.electricity.consumption -= 1600
         console.log(chalk["whiteBright"](`${this.name} has been switched on`))
     }
 
     switchoff(){
         this.status = "off"
-        this.house.utilities.electricity.consumption += 1
+        this.house.utilities.electricity.consumption += 1600
         console.log(chalk["whiteBright"](`${this.name} has been switched off and set to resting position`))
     }
 

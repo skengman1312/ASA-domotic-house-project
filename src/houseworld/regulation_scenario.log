@@ -1,0 +1,42 @@
+GardnerAgent                   Trying to use intention SenseGreenhouseIntention to achieve goal SenseGreenhouseGoal#0[object Object]
+GardnerAgent>SenseGreenhouseIntention#0 Intention started
+GardnerAgent                   Trying to use intention ReactiveRegulationIntention to achieve goal ReactiveRegulationGoal#1[object Object]
+GardnerAgent>ReactiveRegulationIntention#1 Intention started
+carrots has been planted in  greenhouse
+GardnerAgent>SenseGreenhouseIntention#0 sense: greenhouse has low_ph
+GardnerAgent>SenseGreenhouseIntention#0 sense: greenhouse has low_nutrients
+GardnerAgent                   Belief changed: low_ph greenhouse
+GardnerAgent                   Belief changed: low_nutrients greenhouse
+GardnerAgent                   Acting on greenhouse to regulate pH
+optimal ph has been restored for greenhouse
+GardnerAgent                   Acting on greenhouse to regulate nutrients
+optimal nutrients have been restored for greenhouse
+GardnerAgent>SenseGreenhouseIntention#0 sense: greenhouse has opt_ph
+GardnerAgent>SenseGreenhouseIntention#0 sense: greenhouse has opt_nutrients
+GardnerAgent                   Belief changed: not low_ph greenhouse
+GardnerAgent                   Belief changed: not low_nutrients greenhouse
+cycle 1
+cycle 2
+nutrients level for greenhouse carrots have dropped below optimal levels
+GardnerAgent>SenseGreenhouseIntention#0 sense: greenhouse has low_nutrients
+GardnerAgent                   Belief changed: low_nutrients greenhouse
+GardnerAgent                   Acting on greenhouse to regulate nutrients
+optimal nutrients have been restored for greenhouse
+GardnerAgent>SenseGreenhouseIntention#0 sense: greenhouse has opt_nutrients
+GardnerAgent                   Belief changed: not low_nutrients greenhouse
+cycle 3
+ph level for greenhouse carrots have dropped below optimal levels
+GardnerAgent>SenseGreenhouseIntention#0 sense: greenhouse has low_ph
+GardnerAgent                   Belief changed: low_ph greenhouse
+GardnerAgent                   Acting on greenhouse to regulate pH
+optimal ph has been restored for greenhouse
+GardnerAgent>SenseGreenhouseIntention#0 sense: greenhouse has opt_ph
+GardnerAgent                   Belief changed: not low_ph greenhouse
+cycle 4
+nutrients level for greenhouse carrots have dropped below optimal levels
+GardnerAgent>SenseGreenhouseIntention#0 sense: greenhouse has low_nutrients
+GardnerAgent                   Belief changed: low_nutrients greenhouse
+GardnerAgent                   Acting on greenhouse to regulate nutrients
+optimal nutrients have been restored for greenhouse
+GardnerAgent>SenseGreenhouseIntention#0 sense: greenhouse has opt_nutrients
+GardnerAgent                   Belief changed: not low_nutrients greenhouse

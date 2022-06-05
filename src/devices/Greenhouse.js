@@ -22,7 +22,7 @@ class Greenhouse extends Observable {
         if(this.status == "off"){
             this.status = 'on'
             this.crop = crop
-            this.house.utilities.electricity.consumption += 1;
+            this.house.utilities.electricity.consumption += 152;
             // Include some messages logged on the console!
             console.log(chalk["green"](crop, "has been planted in ", this.name))
 
@@ -34,7 +34,7 @@ class Greenhouse extends Observable {
      harvest() {
         //await new Promise( res => setTimeout(res, 6300))
         this.status = 'off'
-        this.house.utilities.electricity.consumption -= 1;
+        this.house.utilities.electricity.consumption -= 152;
 
         // Include some messages logged on the console!
         console.log(chalk["green"](this.crop, "has been harvested\n"+ this.name, ' turned off'))
